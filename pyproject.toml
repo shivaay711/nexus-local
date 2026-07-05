@@ -1,0 +1,29 @@
+[project]
+name = "nexus-local"
+version = "0.1.0"
+description = "Private, offline-first personal AI system: local RAG, approval-gated memory, preference learning."
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.110", "pydantic>=2.6", "pydantic-settings>=2.2",
+  "sqlalchemy>=2.0", "uvicorn>=0.29", "numpy>=1.26",
+  "pypdf>=4.0", "pdfplumber>=0.11", "python-docx>=1.1", "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.4"]
+neural = ["sentence-transformers>=2.7", "torch>=2.2"]
+training = ["peft>=0.10", "transformers>=4.40", "bitsandbytes; platform_system=='Linux'"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"

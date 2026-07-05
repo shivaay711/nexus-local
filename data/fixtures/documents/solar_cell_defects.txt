@@ -1,0 +1,13 @@
+CellScan Project Notes: Solar Cell Defect Detection
+
+Electroluminescence (EL) imaging reveals defects in photovoltaic cells that
+are invisible to the naked eye. Common defect classes include micro-cracks,
+finger interruptions, and dark regions caused by broken busbars.
+
+The CellScan pipeline fine-tunes a ResNet-18 backbone on EL images. Grad-CAM
+heatmaps localize the image regions that drive each prediction, and
+temperature scaling calibrates the model's confidence scores so that reported
+probabilities match empirical accuracy.
+
+Class imbalance is handled with weighted sampling. All metrics must come from
+a real training run; the project forbids fabricated numbers in the README.

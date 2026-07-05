@@ -1,0 +1,127 @@
+{
+  "run_id": "a2082575f17a4f8e92d031f8b3378c3d",
+  "dataset_hash": "bb37819d54bc3c1c6180eeb5b823589f14927cf29464488b2d96918eecd3f35d",
+  "metrics": {
+    "k": 5,
+    "queries": 8,
+    "precision_at_k": 0.25,
+    "recall_at_k": 1.0,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.9713,
+    "hit_rate_at_k": 1.0,
+    "mean_retrieval_latency_ms": 4.73,
+    "note": "Document-level relevance labels; heuristic, not human-adjudicated ground truth."
+  },
+  "per_query": [
+    {
+      "query": "how does the token bucket algorithm handle bursts",
+      "expected_document": "distributed_rate_limiting.md",
+      "found_in_top_k": true,
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    },
+    {
+      "query": "memory usage of sliding window log rate limiting",
+      "expected_document": "distributed_rate_limiting.md",
+      "found_in_top_k": true,
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    },
+    {
+      "query": "what does Grad-CAM do in the solar cell pipeline",
+      "expected_document": "solar_cell_defects.txt",
+      "found_in_top_k": true,
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    },
+    {
+      "query": "how is confidence calibration done for defect detection",
+      "expected_document": "solar_cell_defects.txt",
+      "found_in_top_k": true,
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    },
+    {
+      "query": "which features and weights determine heat risk score",
+      "expected_document": "heat_risk_engine.py",
+      "found_in_top_k": true,
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    },
+    {
+      "query": "what is reciprocal rank fusion formula",
+      "expected_document": "vector_search_primer.pdf",
+      "found_in_top_k": true,
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.8503449055347546,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    },
+    {
+      "query": "how does HNSW use multiple layers",
+      "expected_document": "vector_search_primer.pdf",
+      "found_in_top_k": true,
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 0.9197207891481876,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    },
+    {
+      "query": "highest strike rate batsman in the IPL dataset",
+      "expected_document": "ipl_batting.csv",
+      "found_in_top_k": true,
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "human_review": {
+        "reviewed": false,
+        "reviewer_notes": ""
+      }
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.18.5-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "gpu": "none detected (evaluation environment)"
+  }
+}

@@ -1,0 +1,8 @@
+{"query": "how does the token bucket algorithm handle bursts", "expected_document": "distributed_rate_limiting.md", "relevance_notes": "token bucket section", "domain": "systems"}
+{"query": "memory usage of sliding window log rate limiting", "expected_document": "distributed_rate_limiting.md", "relevance_notes": "sliding window log section", "domain": "systems"}
+{"query": "what does Grad-CAM do in the solar cell pipeline", "expected_document": "solar_cell_defects.txt", "relevance_notes": "Grad-CAM paragraph", "domain": "ml"}
+{"query": "how is confidence calibration done for defect detection", "expected_document": "solar_cell_defects.txt", "relevance_notes": "temperature scaling", "domain": "ml"}
+{"query": "which features and weights determine heat risk score", "expected_document": "heat_risk_engine.py", "relevance_notes": "WEIGHTS dict", "domain": "code"}
+{"query": "what is reciprocal rank fusion formula", "expected_document": "vector_search_primer.pdf", "relevance_notes": "page 2", "domain": "retrieval"}
+{"query": "how does HNSW use multiple layers", "expected_document": "vector_search_primer.pdf", "relevance_notes": "page 1", "domain": "retrieval"}
+{"query": "highest strike rate batsman in the IPL dataset", "expected_document": "ipl_batting.csv", "relevance_notes": "Jaiswal row", "domain": "data"}
